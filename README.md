@@ -2,6 +2,7 @@
 CMPE 285 - Group Project: Stock Portfolio Suggestion Engine
 
 ## Team members:
+- Ravi Kiran Dendukuri - 015513121
 - Monica Lakshmi Mandapati - 015219711
 - Vineeth Reddy Govindh - 015363556
 - Indhu Priya Reddem - 015930148
