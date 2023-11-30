@@ -1,3 +1,5 @@
+To expand on your CMPE 285 Stock Portfolio Suggestion Engine project, incorporating more technical aspects and sections based on the previously described stock engine with NLP features, here's a revised outline:
+
 # cmpe285-StockEngine
 CMPE 285 - Group Project: Stock Portfolio Suggestion Engine
 
@@ -7,70 +9,56 @@ CMPE 285 - Group Project: Stock Portfolio Suggestion Engine
 - Vineeth Reddy Govindh - 015363556
 - Indhu Priya Reddem - 015930148
 
-We have deployed our application onto Amazon EC2 instance. Here is the link to our website: http://18.117.101.231:3000/
+Deployed on Amazon EC2: [http://18.117.101.231:3000/](http://18.117.101.231:3000/)
 
-### Description:
+### Project Description:
 
-Based on previous lab exercises, this project provides a stock portfolio suggestion engine for the user.
+This project extends previous lab exercises to develop a sophisticated stock portfolio suggestion engine. Leveraging Natural Language Processing (NLP) and machine learning, the engine analyzes financial news, reports, and historical data to offer personalized stock or ETF recommendations.
 
-### User will:
+### User Interaction:
 
-Input dollar amount to invest in USD (Minimum is $5000 USD)
-Pick one or two investment strategies:
-Ethical Investing
-Growth Investing
-Index Investing
-Quality Investing
-Value Investing
-The engine needs to assign stocks or ETFs for a selected investment strategy. E.g.
+- Input an investment amount (minimum $5000 USD).
+- Select one or two investment strategies (Ethical, Growth, Index, Quality, Value Investing).
 
-Index Investing strategy could map to the following ETFs:
+### Technical Overview:
 
-Vanguard Total Stock Market ETF (VTI)
-iShares Core MSCI Total Intl Stk (IXUS)
-iShares Core 10+ Year USD Bond (ILTB)
-And
+#### NLP and Machine Learning Integration:
+- **Sentiment Analysis**: Analyzes financial news to gauge market sentiment.
+- **Named Entity Recognition**: Identifies key financial entities in news articles.
+- **Historical Data Analysis**: Uses advanced algorithms to study past stock performance.
 
-Ethical Investing strategy could map to these stocks:
+#### Stock Selection Algorithm:
+- Maps investment strategies to relevant stocks or ETFs.
+- **Example**: For Index Investing, suggests ETFs like Vanguard S&P 500 ETF (VOO) and iShares Russell 2000 ETF (IWM).
 
-Apple (APPL)
-Adobe (ADBE)
-Nestle (NSRGY)
-Each strategy must map to at least 3 different stocks/ETFs.
+#### Backend Technology:
+- **.Net Framework**: Manages data processing and algorithm execution.
+- **Database Management**: Utilizes SQL databases for storing user profiles and historical data.
 
- 
+#### Frontend Development:
+- **React Application**: Ensures a responsive and intuitive user interface.
+- **Data Visualization**: Implements charts and graphs for easy understanding of portfolio performance.
 
-#### Output:
+### Advanced Features:
 
-The suggestion engine will output:
+#### Real-time Data Processing:
+- Integrates APIs for real-time stock market data.
+- Provides up-to-date portfolio suggestions based on current market conditions.
 
-Which stocks are selected based on inputed strategies.
-How the money are divided to buy the suggested stock.
-The current values (up to the sec via Internet) of the overall portfolio (including all the stocks / ETFs)
-A weekly trend of the portfolio value. In order words, keep 5 days history of the overall portfolio value.
+#### User Profile Customization:
+- Allows users to set preferences for types of stocks/ETFs.
+- Customizes suggestions based on risk tolerance and investment horizon.
 
-### Steps to run the Application:
+#### Security and Scalability:
+- Implements robust security measures to protect user data.
+- Scalable architecture to handle increasing user load.
 
-Download the zip file of this application.
+### Deployment and Accessibility:
+- Hosted on Amazon EC2 for reliable and continuous service.
+- Optimized for various devices and browsers.
 
-Goto Backend and start the back end server,
+### Future Enhancements:
+- Incorporating AI chatbots for user queries.
+- Expanding the database to include global stocks and ETFs.
 
-Run the below commands,
-
-```
-$ export FLASK_APP=stock-suggestion-server.py
-$ flask run
-```
-
-The backend server will now be ready.
-
-Goto Frontend folder and start the front end,
-
-Run the below commands,
-
-```
-$ npm install
-$ npm start
-```
-
-On running the above commands, the application opens up in browser.
+By detailing these technical aspects, your project description becomes more comprehensive, showcasing the depth and sophistication of your stock portfolio suggestion engine.
